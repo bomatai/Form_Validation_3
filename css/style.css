@@ -1,0 +1,255 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto+Mono');
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+	font-family: 'Nunito', sans-serif;
+	
+}
+
+#other-title {
+	margin-top: 1rem;
+	color: #fff; 
+}
+
+input::placeholder {
+	color: #000;
+}
+
+body{
+
+	font: 1em/1.5;	
+	background-image:url('../img/background3.jpg');
+	height: 100%;
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: cover; 
+
+
+	}
+
+header {
+	text-align: center;  
+}
+
+h1 {
+	font-size: 2.5em;
+	color:#fff;
+	text-shadow: 0 1px 0 rgba(187, 186, 196, 0.85);
+	margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================================= 
+  Form Element Styles
+==================================== */
+
+form {
+	padding: .875em 1.875em 1.875em;
+	background: #659dc69d;
+	border: 2px solid #fff;
+	border-radius: 20px;
+	margin-top : 1rem;
+}
+
+fieldset,
+legend,
+button {
+	padding: 0;
+	border: none;
+}
+
+fieldset {
+	margin-top: 1.5em;
+}
+
+legend,
+button {
+	font-size: 1.25em;	
+}
+
+legend {
+	font-weight: bold;
+	padding-top: .5em;
+	border-top: 2px solid rgba(39, 226, 117, 0.6);
+	margin-bottom: 1.125em;
+}
+
+input[type="text"],
+input[type="email"],
+legend {
+	width: 85%;
+	
+}
+
+label {
+	color: #ffffff;
+	display: block;
+	margin-bottom: .5em;
+}
+
+input,
+select {
+	/* margin-bottom: 1.125em;	 */
+	margin-bottom: 10px;
+	border-radius: 9px;
+	
+}
+
+input {
+	font-size: 1em;
+	font-weight: 500;
+	padding: 1rem;
+ 
+	background: #e9f6fb;
+	border: 2px solid #29f1c3;
+	outline: none;
+}
+
+
+
+
+input[type=checkbox][checked]{
+	outline: 4px rgb(63, 6, 250);
+}
+
+/* Error Class */
+.error_color{background: indianred;}
+
+/* Correct Class*/
+.correctlyFilled{background: rgb(129, 235, 173);}
+
+input:focus {
+	background: #1862b6;
+	border-color: #b5c1ce;
+	color: #e9f6fb;
+	transition: border-color 1s, background-color 1s;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: inline-block;
+}
+
+button {
+	color: #fff;
+	padding: .55em 1.25em;
+	background: #049372;
+	margin: 1.25em 0 .5em;
+	cursor: pointer;
+	border: 2px solid #29f1c3;
+	border-radius: 9px;
+	transition: all 0.5s;
+}
+
+button:hover {
+	background: #00e640;
+}
+
+input, 
+select, 
+option {
+	font-family: 'roboto', sans-serif;
+	padding: 5px;
+	margin-bottom: 10px;
+
+}
+
+.paypal,.bitcoin{
+	color: #ffffff;
+}
+
+input , input select {	border-radius: 9px;}
+
+
+#totalCost {
+margin: 1rem;
+text-transform: capitalize;
+font-size: 1.4em;
+color:#fff;
+text-shadow: 0 1px 0 rgba(187, 186, 196, 0.85);
+margin-top: 1rem;}
+
+
+/* ================================= 
+  Page Styles
+==================================== */
+
+.container {
+	margin: auto;
+	max-width: 680px;
+}
+
+.shirt div {
+	float: left;
+	margin-right: .85em;
+}
+
+.interests input {
+	margin-bottom: 0;
+}
+
+.credit-card {
+	margin-top: 1.25em;
+}
+
+
+/* ================================= 
+  Helper Classes
+==================================== */
+
+.is-hidden {
+	display: none;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 0) and (max-width: 679px) {
+	header {
+		padding: 2em 0;
+	}
+	button {
+		width: 100%;
+	}
+}
+
+@media (min-width: 680px) {
+	header {
+		padding: 4.65em 0 2.5em;
+	}
+	.col {
+		float: left;
+	}
+	.col + .col {
+		margin-left: 2.5%;
+	}
+	.col-3 {
+		width: 23%;
+	}
+	.col-6 {
+		width: 49%;
+	}
+
+	label {
+		clear: both;
+	}
+}
